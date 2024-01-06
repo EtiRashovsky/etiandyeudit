@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!DOCTYPE html>
+  <html lang="en" dir="rtl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר</title>
+    <link rel="stylesheet" href="CSS/conetct.css">
+    <link rel="stylesheet" href="CSS/hearder.css">
+    <link rel="shortcut icon" href="תמונות/לוגו/לוגו שקוף.png">
+  </head>
+
+<body>
+ 
+    <header>
+      <div class="navbar">
+        <ul class="nav">
+          <li><a href="index.html">דף הבית</a></li>
+          <li><a href="index.html">אודות</a> </li>
+          <li><a href="galery.html ">גלריה</a> </li>
+          <li><a href="couplesRecommend.html">לקוחות ממליצים</a></li>
+          <li><a href="conetct.html">צור קשר</a></li>
+          <li id="logo"> <img src="תמונות/לוגו/לוגו.png" alt="Logo"></li>
+       
+
+      </div>
+      </ul>
+  
+    </header>
+
+  <main>
+  <form class="enrollment" action="thank.html">
+  <fieldset>
+    <legend id="personal">צור קשר</legend>
+    שם: <br> <input type="text"><br>
+    משפחה: <br> <input type="text"> <br>
+    כתובת: <br> <input type="text" > <br>
+    טלפון: <br> <input type="text" required> <br>
+    מייל: <br> <input type="email" placeholder="example@example.co.il" required> <br>
+    <label for="select">סוג האירע</label>
+    <br>
+    <select>
+      <option for="Marriage"></option>
+      <option>חתונה</option>
+      <option>אירוסין</option>
+      <option>בר מצווה</option>
+      <option>בת מצווה</option>
+      <option>ברית</option>
+    </select>
+    <br>
+    <label for="date">תאריך האירוע</label>
+    <br>
+    <input type="date"><br>
+    <br>
+ <label for="budget">תקציב:</label>
+<br>
+<input type="range" id="budget" name="budget" min="0" max="100000" value="50000" oninput="updateBudgetValue(this.value)">
+<br>
+<span class="budget-value">50000</span>
+<span class="budget-value">60000</span>
+<span class="budget-value">70000</span>
+<span class="budget-value">80000</span>
+<span class="budget-value">90000</span>
+<span class="budget-value">100000</span>
+<br>
+<label for="comments">הערות נוספות:</label>
+<br>
+<textarea id="comments" name="comments" rows="4"></textarea>
+<br>
+<input type="checkbox" id="agree-terms" name="agree-terms" required>
+<label for="agree-terms">אני מסכים לתנאים ולהגבלות</label><br>
+
+<input type="submit" class="send" id="submit">  
+
+<script>
+  function updateBudgetValue(value) {
+    // Get the budget value elements
+    var budgetValueElements = document.getElementsByClassName("budget-value");
+
+    // Calculate the step size
+    var stepSize = 5000; // Change this value to adjust the step size
+
+    // Calculate the minimum and maximum values
+    var minValue = 5000; // Change this value to adjust the minimum value
+    var maxValue = 100000; // Change this value to adjust the maximum value
+
+    // Calculate the number of steps
+    var numSteps = (maxValue - minValue) / stepSize;
+
+    // Calculate the value for each budget value element
+    var currentValue = minValue;
+    var stepValue = (maxValue - minValue) / numSteps;
+
+    // Loop through each element and update the displayed value
+    for (var i = 0; i < budgetValueElements.length; i++) {
+      budgetValueElements[i].textContent = currentValue;
+      currentValue += stepValue;
+    }
+  }
+</script>
+   
+    </fieldset>
+    </form>
+    
+    <footer>
+      <div class="icon">
+        <a href="https://www.youtube.com/?hl=IW"><img src="תמונות/אייקונים/יוטיוב.png" alt="יוטיוב"></a>
+        <a href="https://www.facebook.com/?locale=he_IL"><img src="תמונות/אייקונים/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="תמונות/אייקונים/instagram_733558.png" alt=""></a>
+        <a href="https://web.whatsapp.com/%F0%9F%8C%90/he"><img src="תמונות/אייקונים/whatsapp_2111728.png" alt=""></a>
+        <a href="https://www.google.com/intl/iw/gmail/about/"><img src="תמונות/אייקונים/gmail_732200.png" alt=""></a>
+      </div>
+  
+    </footer>
+
+</html>

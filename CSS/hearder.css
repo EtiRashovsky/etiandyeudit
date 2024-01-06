@@ -1,0 +1,100 @@
+header {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+ul.nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  height: 7vw;
+}
+
+ul.nav a {
+  padding: 2.2vw;
+  color: white;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+ul.nav p{
+  padding-left: 4vw;
+  color: rgb(246, 192, 192);
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+ul li:nth-child(1):hover {
+  background-color: #f9e2f0;
+}
+
+ul li:nth-child(2):hover {
+  background-color: #f9d2ec;
+}
+
+ul li:nth-child(3):hover {
+  background-color: #ffcaed;
+}
+
+ul li:nth-child(4):hover {
+  background-color: hsl(318, 78%, 88%);
+}
+
+ul li:nth-child(5):hover {
+  background-color: #fec6ea;
+}
+
+#logo {
+  margin-right: auto;
+}
+
+#logo img {
+  height: 6.7vw;
+}
+
+video {
+  width: 100%;
+}
+@media(max-width:1000px) {
+  ul.nav a {
+  font-size:2.5vw;
+  }
+  ul.nav {
+    height: 8vw;
+  }
+   
+}
+@media(max-width:600px) {
+  
+
+  ul.nav {
+    height: 10vw;
+  }
+
+  ul.nav a {
+    font-size: 2.8vw;
+  }
+  ul.nav p {
+      font-size: 2.3vw;
+  padding-left: 1vw;
+ }
+  #logo img {
+    height: 11vw;
+  }
+
+}

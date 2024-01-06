@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  margin: 0%;
+  /* background-image:url(צור\ קשר\ 4.jpg) ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+  background-color: black;
+}
+
+.enrollment {
+  text-align: center;
+  color: rgb(246, 192, 192);
+  font-size: 1.7vw;
+  padding: 20vw;
+  margin-top: 0vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: gold;
+  padding-top: 10vw;
+}
+
+#personal {
+  font-size: 3vw;
+  color: rgb(246, 192, 192);
+  font-family: system-ui;
+
+}
+
+.send {
+  color: rgb(246, 192, 192);
+  font-size: 1.5vw;
+  font-family: system-ui;
+
+}
+
+input[type=text],
+input[type=email],
+input[type=date] {
+  width: 22vw;
+  height: 2vw;
+  font-size: 1.5vw;
+  color: rgb(199, 137, 195);
+
+}
+
+input[type=range] {
+  width: 40vw;
+}
+
+.budget-value {
+  padding: 20px;
+}
+
+#comments {
+  border: 0.2vw solid rgb(199, 137, 195);
+  padding: 5vw;
+  text-align: center;
+}
+
+input[type=submit] {
+  width: 8vw;
+  height: 2vw;
+  color: rgb(199, 137, 195);
+  background-color: white;
+}
+
+select {
+  font-size: 1.5vw;
+  width: 15vw;
+  height: 2vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+  height: 5em;
+  box-sizing: border-box;
+  text-align: center
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50em;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+  /* Apply scale transform on hover */
+  opacity: 1;
+}
+
+.icon img {
+  transition: transform 0.3s ease;
+  /* Add transition property for smooth animation */
+  opacity: 0.8;
+}
+
+
+@media(max-width:1000px) {
+ 
+
+  #personal {
+    font-size: 5vw;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=date] {
+    width: 29vw;
+  }
+
+  .enrollment {
+    font-size: 3.3vw;
+    padding: 14vw;
+  }
+
+  .budget-value {
+    padding: 8px;
+  }
+
+  input[type=submit] {
+    width: 11vw;
+    height: 3vw;
+  }
+
+  .send {
+    font-size: 2vw;
+  }
+
+}
+
+@media(max-width:600px) {
+ 
+  fieldset {
+    margin-top: 7vw;
+  }
+
+  .enrollment {
+    padding-top: 17vw;
+    font-size: 4vw;
+    padding: 4vw;
+    margin-top: 20v;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=date] {
+    width: 30vw;
+    height: 4vw;
+    font-size: 2.5vw
+  }
+
+  select {
+    width: 30vw;
+    height: 4vw;
+    font-size: 2.5vw
+  }
+
+  input[type=range] {
+    width: 60vw;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=date] {
+    width: 39vw;
+  }
+
+  input[type=submit] {
+    width: 20vw;
+    height: 5vw;
+    font-size: 3vw;
+  }
+
+  .icon {
+    padding: 7vw;
+  }
+
+  .budget-value {
+    padding: 8px;
+  }
+
+}
